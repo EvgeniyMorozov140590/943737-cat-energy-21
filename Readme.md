@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Морозов](https://up.htmlacademy.ru/adaptive/21/user/943737).
-* Наставник: `Неизвестно`.
+* Наставник: [Светлана Блинова](https://htmlacademy.ru/profile/id1432187).
 
 ---
 
