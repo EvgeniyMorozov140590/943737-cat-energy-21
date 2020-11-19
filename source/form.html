@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html" aria-label="на главную">
+      <img src="https://via.placeholder.com/34x37" alt="кэт энерджи логотип">
+      <img src="https://via.placeholder.com/101x18" alt="кэт энерджи надпись">
+    </a>
+    <nav class="page-nav">
+      <button class="page-nav__menu-button" type="button" aria-label="открыть меню сайта"></button>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main__description">
+      Заполните анкету, и мы подберем
+      программу питания для вашего кота
+    </p>
+    <form class="form" action="https://echo.htmlacademy.ru">
+      <section class="form-group">
+        <h2 class="visibility-hidden">Основная информация</h2>
+        <label class="label-input" for="name">имя:</label>
+        <input class="input-text" type="text" name="name" id="name">
+
+        <label class="label-input" for="weight">вес(кг):</label>
+        <input class="input-number" type="number" name="weight" id="weight">
+
+        <label class="label-input" for="age">возраст(лет):</label>
+        <input class="input-number" type="number" name="age" id="age">
+      </section>
+      <section class="form-group">
+        <h2 class="visibility-hidden">Направление программы питания</h2>
+        <label class="label-input" for="slimming"> похудение</label>
+        <input class="input-number" type="radio" name="nutrition-type" id="slimming">
+
+        <label class="label-input" for="weight-gain">набор массы</label>
+        <input class="input-number" type="radio" name="nutrition-type" id="weight-gain">
+
+        <label class="label-input" for="need-advice">не знаю (нужен ваш совет)</label>
+        <input class="input-number" type="radio" name="nutrition-type" id="need-advice">
+      </section>
+      <section class="form-group">
+        <h2 class="form-group__title">Контактные данные(владельца кота)</h2>
+        <label class="label-input" for="email">e-mail:</label>
+        <input class="input-email" type="email" placeholder="kuklachev@gmail.com" name="email" id="email">
+
+        <label class="label-input" for="phone">телефон:</label>
+        <input class="input-text" type="text" placeholder="8 (960) 900-60-90" name="phone" id="phone">
+      </section>
+      <section class="form-group">
+        <h2 class="form-group__title">Комментарии</h2>
+        <label aria-label="комментарии" for="comments"></label>
+        <textarea class="textarea" name="comments" id="comments" cols="40" rows="10"></textarea>
+      </section>
+      <section class="form-group">
+        <h2 class="form-group__title">Дополнительно</h2>
+        <label class="label-input" for="sweetener">сахарозаменитель</label>
+        <input class="input-checkbox" type="checkbox" name="sweetener" id="sweetener">
+
+        <label class="label-input" for="water">питьевая вода</label>
+        <input class="input-checkbox" type="checkbox" name="water" id="water">
+
+        <label class="label-input" for="milk">молоко</label>
+        <input class="input-checkbox" type="checkbox" name="milk" id="milk">
+
+        <label class="label-input" for="vitamins">витамины</label>
+        <input class="input-checkbox" type="checkbox" name="vitamins" id="vitamins">
+
+        <button class="action-button" type="submit">отправить заявку</button>
+      </section>
+      <p class="footnote">* — Обязательные поля</p>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="index.html" aria-label="на главную">
+      <img src="https://via.placeholder.com/128x24" alt="кэт энерджи надпись">
+    </a>
+    <section class="social-network">
+      <h2 class="visibility-hidden">Мы в социальных сетях</h2>
+      <ul class="social-network__list">
+        <li class="social-network__item">
+          <a href="">мы в vk</a>
+        </li>
+        <li class="social-network__item">
+          <a href="">мы в instagram</a>
+        </li>
+        <li class="social-network__item">
+          <a href="">мы в facebook</a>
+        </li>
+      </ul>
+    </section>
+    <section class="developed">
+      <h2 class="visibility-hidden">Разработано</h2>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="developed__link">HTML Academy</a>
+    </section>
+  </footer>
+</body>
+
+</html>
