@@ -1,0 +1,30 @@
+.promo {
+  width: 100%;
+  padding-top: 27px;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../img/promo-background@1x.jpg");
+  background-size: 100% 62%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.promo__inner-wrapper {
+  width: 87.5%;
+  text-align: center;
+}
+
+.promo__title {
+  @include font-size(36px, 36px);
+
+  margin: 0 0 25px 0;
+  color: $color-basic-white;
+}
+
+.promo__description {
+  @include font-size(14px, 14px);
+
+  margin: 0 0 29px 0;
+  text-transform: uppercase;
+  color: $color-basic-white;
+}

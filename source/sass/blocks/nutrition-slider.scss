@@ -1,0 +1,41 @@
+.nutrition-slider {
+  padding: 15px 0 31px;
+  background-color: $color-basic-greylighty;
+  text-align: center;
+}
+
+.nutrition-slider__inner-wrapper {
+  width: 87.5%;
+}
+
+.slider__label {
+  @include font-size(16px, 20px);
+
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.slider__image {
+  margin-bottom: 27px;
+}
+
+.slider__bar {
+  width: 84px;
+  height: 14px;
+  background: $color-basic-white;
+  border: 1px solid $color-special-grey;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin: 0 13px;
+  position: relative;
+}
+
+.slider__scale {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  background: $color-basic-green;
+  border-radius: 6px;
+  top: 3px;
+  left: 4px;
+}

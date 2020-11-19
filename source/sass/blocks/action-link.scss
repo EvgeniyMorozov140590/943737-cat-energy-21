@@ -1,0 +1,14 @@
+.action-link {
+  @include font-size();
+
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: $color-basic-green;
+  padding: 10px 44px;
+  color: $color-basic-white;
+  vertical-align: baseline;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
