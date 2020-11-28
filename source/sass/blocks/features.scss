@@ -1,0 +1,42 @@
+.features {
+  padding-top: 27px;
+  padding-bottom: 42px;
+}
+
+.features__title {
+  @include font-size(36px, 40px);
+
+  margin: 0 0 38px 0;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.features__icon-functional {
+  @include feature-item-icon("../../img/feature-functional.svg");
+}
+
+.features__icon-powder {
+  @include feature-item-icon("../../img/feature-powder.svg");
+}
+
+.features__icon-meal {
+  @include feature-item-icon("../../img/feature-meal.svg");
+}
+
+.features__icon-period {
+  @include feature-item-icon("../../img/feature-period.svg");
+}
+
+.features__description {
+  @include font-size();
+
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: $color-special-greydark;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+  margin-left: 20px;
+}

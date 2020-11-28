@@ -1,0 +1,23 @@
+@mixin font-size($size: 14px, $line-height: 18px) {
+  font-size: $size;
+  line-height: $line-height;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin button() {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@mixin flexible() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin feature-item-icon($icon-url) {
+  background-image: url($icon-url);
+  width: 60px;
+  height: 60px;
+}
