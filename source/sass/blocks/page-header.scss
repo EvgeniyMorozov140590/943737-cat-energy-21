@@ -1,6 +1,10 @@
 .page-header {
   box-sizing: border-box;
   padding: 11px 0 17px;
+
+  &--separated {
+    border-bottom: 1px solid $color-basic-greylight;
+  }
 }
 
 .page-header__logo {
