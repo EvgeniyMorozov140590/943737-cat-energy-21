@@ -14,6 +14,11 @@ img {
   height: auto;
 }
 
+.form-group__input:required + .form-group__label-input::after {
+  content: "*";
+  position: absolute;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -50,5 +55,11 @@ img {
   @include flexible();
 
   align-items: center;
+  flex-direction: column;
+}
+
+.flexible-column {
+  @include flexible();
+
   flex-direction: column;
 }

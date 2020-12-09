@@ -1,0 +1,11 @@
+.action-button {
+  @include font-size(16px, 20px);
+
+  width: 100%;
+  background-color: $color-basic-green;
+  padding: 7px 44px;
+  text-transform: uppercase;
+  color: $color-basic-white;
+  border: none;
+  margin-bottom: 21px;
+}

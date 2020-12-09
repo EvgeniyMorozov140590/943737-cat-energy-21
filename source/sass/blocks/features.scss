@@ -13,20 +13,25 @@
   margin-bottom: 20px;
 }
 
-.features__icon-functional {
-  @include feature-item-icon("../../img/feature-functional.svg");
-}
+.features__icon {
+  width: 60px;
+  height: 60px;
 
-.features__icon-powder {
-  @include feature-item-icon("../../img/feature-powder.svg");
-}
+  &--functional {
+    background-image: url("../../img/feature-functional.svg");
+  }
 
-.features__icon-meal {
-  @include feature-item-icon("../../img/feature-meal.svg");
-}
+  &--powder {
+    background-image: url("../../img/feature-powder.svg");
+  }
 
-.features__icon-period {
-  @include feature-item-icon("../../img/feature-period.svg");
+  &--meal {
+    background-image: url("../../img/feature-meal.svg");
+  }
+
+  &--period {
+    background-image: url("../../img/feature-period.svg");
+  }
 }
 
 .features__description {

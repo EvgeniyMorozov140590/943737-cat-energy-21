@@ -15,9 +15,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-@mixin feature-item-icon($icon-url) {
-  background-image: url($icon-url);
-  width: 60px;
-  height: 60px;
-}

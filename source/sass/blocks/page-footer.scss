@@ -1,6 +1,6 @@
 .page-footer {
-  padding-top: 40px;
   padding-bottom: 22px;
+  background-color: $color-basic-grey;
 }
 
 .page-footer__logo {
@@ -29,4 +29,8 @@
   color: $color-special-greydark;
   text-decoration: none;
   width: 100%;
+}
+
+.page-footer__bottom-container {
+  padding-top: 39px;
 }

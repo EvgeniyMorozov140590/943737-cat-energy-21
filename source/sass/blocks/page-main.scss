@@ -1,0 +1,11 @@
+.page-main__title {
+  @include font-size(36px, 36px);
+
+  margin: 27px 0 37px;
+}
+
+.page-main__description {
+  text-transform: uppercase;
+
+  margin: 0 0 22px;
+}
