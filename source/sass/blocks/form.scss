@@ -21,33 +21,6 @@
   width: 87.5%;
 }
 
-.form-group__title-wrapper {
-  margin-bottom: 35px;
-  width: 100%;
-  position: relative;
-}
-
-.form-group__title {
-  @include font-size(24px, 26px);
-
-  padding-right: 20px;
-  margin: 0 0 35px;
-  max-width: 65%;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: calc(93.75vw - 100%);
-    border-top: 2px solid $color-basic-green;
-    top: 15px;
-    left: 100%;
-    z-index: 1;
-  }
-}
-
 .form-group__input {
   @include font-size(16px, 18px);
 
@@ -167,6 +140,11 @@
 
 .form-group__input-checkbox-wrapper:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.form-group__input:required + .form-group__label-input::after {
+  content: "*";
+  position: absolute;
 }
 
 .form__actions {
