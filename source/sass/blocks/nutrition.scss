@@ -1,9 +1,21 @@
 .nutrition {
   padding-top: 22px;
+
+  @media (min-width: $media-width-tablet) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    padding-top: 82px;
+  }
 }
 
-.nutrition__item:not(:last-child) {
-  margin-bottom: 20px;
+.nutrition__list {
+  @media (min-width: $media-width-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .nutrition__item {
@@ -12,9 +24,14 @@
   box-sizing: border-box;
   position: relative;
 
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   &--slimming::after {
     content: "";
     position: absolute;
+    background-size: cover;
     width: 50px;
     height: 53px;
     background-image: url("../../img/cat-slimming.svg");
@@ -25,11 +42,54 @@
   &--weight-gain::after {
     content: "";
     position: absolute;
+    background-size: cover;
     width: 67px;
     height: 50px;
     background-image: url("../../img/cat-weight-gain.svg");
     top: 20px;
     left: 10px;
+  }
+
+  @media (min-width: $media-width-tablet) {
+    padding: 77px 53px 53px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &--slimming::after {
+      width: 200px;
+      height: 211px;
+      top: 75px;
+      left: calc(100% - 262px);
+    }
+
+    &--weight-gain::after {
+      width: 268px;
+      height: 200px;
+      top: 80px;
+      left: calc(100% - 290px);
+    }
+  }
+
+  @media (min-width: $media-width-desktop) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &--slimming::after {
+      width: 100px;
+      height: 100px;
+      top: 50px;
+      left: 52px;
+    }
+
+    &--weight-gain::after {
+      width: 134px;
+      height: 100px;
+      top: 50px;
+      left: 32px;
+    }
   }
 }
 
@@ -38,6 +98,18 @@
 
   text-transform: uppercase;
   margin: 0 0 29px 69px;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(36px, 36px);
+
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
 }
 
 .nutrition__description {
@@ -47,6 +119,27 @@
   padding-bottom: 23px;
   margin: 0 0 19px 0;
   border-bottom: 1px solid $color-basic-greylight;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(16px, 24px);
+
+    border: none;
+
+    &--slimming {
+      width: 62%;
+    }
+
+    &--weight-gain {
+      width: 57%;
+    }
+  }
+
+  @media (min-width: $media-width-desktop) {
+    &--slimming,
+    &--weight-gain {
+      width: 100%;
+    }
+  }
 }
 
 .nutrition__action {
@@ -66,5 +159,9 @@
     background-image: url("../../img/icon-arrow.svg");
     top: 7px;
     right: 3px;
+  }
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(20px, 30px);
   }
 }

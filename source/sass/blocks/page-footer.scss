@@ -1,6 +1,10 @@
 .page-footer {
   padding-bottom: 22px;
   background-color: $color-basic-grey;
+
+  @media (min-width: $media-width-tablet) {
+    padding-bottom: 0;
+  }
 }
 
 .page-footer__logo {
@@ -8,6 +12,12 @@
   padding-bottom: 32px;
   border-bottom: 1px solid $color-basic-greylight;
   text-align: center;
+
+  @media (min-width: $media-width-tablet) {
+    width: 11%;
+    border-bottom: 0;
+    padding: 0;
+  }
 }
 
 .social-network__list {
@@ -15,6 +25,12 @@
   padding-bottom: 24px;
   width: 100%;
   border-bottom: 1px solid $color-basic-greylight;
+
+  @media (min-width: $media-width-tablet) {
+    width: 23%;
+    border-bottom: 0;
+    padding: 0;
+  }
 }
 
 .social-network__item:not(:first-child) {
@@ -29,8 +45,21 @@
   color: $color-special-greydark;
   text-decoration: none;
   width: 100%;
+
+  @media (min-width: $media-width-tablet) {
+    width: 23%;
+    padding: 0;
+  }
 }
 
 .page-footer__bottom-container {
   padding-top: 39px;
+  box-sizing: border-box;
+
+  @media (min-width: $media-width-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }

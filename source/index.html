@@ -9,35 +9,49 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header ">
-    <div class="flexible-between-center container">
+  <header class="page-header page-header--promo flexible-centered">
+    <div class="page-header__inner-wrapper flexible-between-center">
       <a class="page-header__logo flexible-between-center" href="index.html" aria-label="на главную">
         <img src="./img/logo-mobile.svg" width="34" height="37" alt="кэт энерджи логотип">
         <img src="./img/logo-text.svg" width="101" height="18" alt="кэт энерджи надпись">
       </a>
-      <nav class="page-nav flexible-align-center">
-        <button class="page-nav__menu-button" type="button" aria-label="открыть меню сайта"></button>
-      </nav>
+      <button id="nav-menu-button" class="menu-button menu-button--menu-closed" type="button"
+        aria-label="открыть меню сайта"></button>
     </div>
-  </header>
-  <main class="page-main">
-    <h1 class="visibility-hidden">Интернет магазин функционального питания для котов кэт энерджи</h1>
+    <nav id="nav-menu" class="page-nav page-nav--closed">
+      <ul class="list page-nav__list">
+        <li class="page-nav__item">
+          <a class="page-nav__link page-nav__link--promo" href="./index.html">главная</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link page-nav__link--promo" href="./catalog.html">каталог продукции</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link page-nav__link--promo" href="./form.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
     <section class="promo flexible-justify-center">
       <div class="promo__inner-wrapper">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__description">занялся собой? займись котом!</p>
-        <picture>
-          <img src="./img/promo-image-mobile@1x.png" width="280" height="270" alt="банка c кормом">
-        </picture>
-        <a href="./form.html" class="action-link">подобрать программу</a>
       </div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./img/promo-image-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="./img/promo-image-tablet@1x.png">
+        <img class="promo__image" src="./img/promo-image-mobile@1x.png" alt="банка c кормом">
+      </picture>
+      <a href="./form.html" class="action-link">подобрать программу</a>
     </section>
+  </header>
+  <main class="page-main">
+    <h1 class="visibility-hidden">Интернет магазин функционального питания для котов кэт энерджи</h1>
     <section class="nutrition container">
       <h2 class="visibility-hidden">Программы питания</h2>
       <ul class="nutrition__list list">
         <li class="nutrition__item nutrition__item--slimming">
           <h3 class="nutrition__title">похудение</h3>
-          <p class="nutrition__description">
+          <p class="nutrition__description nutrition__description--slimming">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
@@ -45,7 +59,7 @@
         </li>
         <li class="nutrition__item nutrition__item--weight-gain">
           <h3 class="nutrition__title">набор массы</h3>
-          <p class="nutrition__description">
+          <p class="nutrition__description nutrition__description--weight-gain">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
@@ -85,7 +99,7 @@
           <p class="features__description">
             Уже через месяц
             наслаждайтесь изменениями
-            к лучшему вашего питомца!
+            к лучшему<br> вашего питомца!
           </p>
         </li>
       </ul>
@@ -100,18 +114,20 @@
         <div class="nutrition-example__stats flexible-between-center">
           <p class="stats__parameter stats__parameter--weight-loss">5кг</p>
           <p class="stats__parameter stats__parameter--time-spent">60 дней</p>
-          <p class="stats__cost">затраты на питание: 15 000 руб.</p>
+          <p class="stats__cost">затраты на питание: <span class="cost__value">15 000 руб.</span></p>
         </div>
       </div>
-    </section>
-    <section class="nutrition-slider flexible-justify-center">
-      <div class="nutrition-slider__inner-wrapper">
+      <div class="nutrition-slider flexible-column-center">
         <h2 class="visibility-hidden">Слайдер прогресса питания</h2>
-        <img class="slider__image" src="./img/cat-slider-mobile@1x.png" width="280" height="232" alt="кот">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./img/cat-slider-fat@1x.png">
+          <img class="slider__image" src="./img/cat-slider-mobile@1x.png" alt="кот">
+        </picture>
         <div class="flexible-centered">
           <p class="slider__label">было</p>
           <div class="slider__bar">
             <div class="slider__scale"></div>
+            <div class="slider__track"></div>
           </div>
           <p class="slider__label">стало</p>
         </div>
@@ -119,16 +135,16 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="contacts contacts--light">
-      <div class="container flexible-between-center">
-        <h2 class="visibility-hidden">Контакты</h2>
-        <p class="contacts__invintation">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="contacts contacts--light flexible-centered">
+      <h2 class="visibility-hidden">Контакты</h2>
+      <div class="contacts__inner-wrapper flexible-between-center">
+        <p class="contacts__invintation">приглашаем <br>к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
-      <iframe
+    </section>
+    <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003226!2d30.320858716213408!3d59.938719169053975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605379097367!5m2!1sru!2sru"
         class="contacts__map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </section>
     <div class="page-footer__bottom-container container flexible-column-center">
       <a class="page-footer__logo" href="index.html" aria-label="на главную">
         <img src="./img/logo-text.svg" width="128" height="24" alt="кэт энерджи надпись">
@@ -172,6 +188,7 @@
       </a>
     </div>
   </footer>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

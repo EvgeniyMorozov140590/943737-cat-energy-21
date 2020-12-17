@@ -1,0 +1,44 @@
+
+.menu-button {
+  @include button();
+
+  width: 24px;
+  height: 16px;
+  position: relative;
+}
+
+.menu-button--menu-closed {
+  border-bottom: 2px solid $color-basic-black;
+  border-top: 2px solid $color-basic-black;
+
+  &::before {
+    content: "";
+    width: 24px;
+    border-bottom: 2px solid $color-basic-black;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+}
+
+.menu-button--menu-opened {
+  &::before {
+    content: "";
+    width: 24px;
+    border-bottom: 2px solid $color-basic-black;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    border-bottom: 2px solid $color-basic-black;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transform: rotate(135deg);
+  }
+}

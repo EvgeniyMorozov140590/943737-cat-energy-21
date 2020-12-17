@@ -4,11 +4,15 @@
   display: inline-block;
   box-sizing: border-box;
   background-color: $color-basic-green;
-  padding: 10px 44px;
+  padding: 10px 24px;
   color: $color-basic-white;
   vertical-align: baseline;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   width: 100%;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(20px, 20px);
+  }
 }
