@@ -1,21 +1,85 @@
 .features {
   padding-top: 27px;
   padding-bottom: 42px;
+
+  @media (min-width: $media-width-tablet) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    padding-top: 71px;
+    padding-bottom: 26px;
+  }
 }
 
 .features__title {
   @include font-size(36px, 40px);
 
   margin: 0 0 38px 0;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(60px, 60px);
+
+    margin-bottom: 32px;
+  }
 }
 
-.features__item:not(:last-child) {
-  margin-bottom: 20px;
+.features__list {
+  @media (min-width: $media-width-tablet) {
+    counter-reset: list;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 137px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.features__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $media-width-tablet) {
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 280px;
+    box-sizing: border-box;
+
+    &::after {
+      @include font-size(280px, 280px);
+
+      counter-increment: list;
+      content: counter(list);
+      position: absolute;
+      right: 50px;
+      top: 0;
+      color: $color-basic-grey;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $media-width-desktop) {
+    &::after {
+      right: 0;
+    }
+  }
 }
 
 .features__icon {
   width: 60px;
   height: 60px;
+  background-size: cover;
 
   &--functional {
     background-image: url("../../img/feature-functional.svg");
@@ -32,6 +96,12 @@
   &--period {
     background-image: url("../../img/feature-period.svg");
   }
+
+  @media (min-width: $media-width-tablet) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
 }
 
 .features__description {
@@ -44,4 +114,24 @@
   vertical-align: middle;
   width: 70%;
   margin-left: 20px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(16px, 24px);
+
+    width: 85.9%;
+    margin-left: 0;
+    z-index: $layer-second;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $media-width-desktop) {
+    width: 100%;
+  }
 }

@@ -1,17 +1,52 @@
 .nutrition-example {
   padding-top: 27px;
-  padding-bottom: 25px;
-  background-color: $color-basic-greylighty;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient($color-basic-greylighty, $color-basic-greylighty);
+
+  @media (min-width: $media-width-tablet) {
+    background-size: 100% 45%;
+    padding-top: 43px;
+    border-top: 1px solid $color-basic-grey-verylight;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    border-top: none;
+    padding-bottom: 75px;
+    padding-top: 0;
+    background-size: 100% 73%;
+  }
 }
 
 .nutrition-example__inner-wrapper {
   width: 87.5%;
+
+  @media (min-width: $media-width-tablet) {
+    width: 92%;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    @include flexible();
+
+    width: 30%;
+    align-items: flex-end;
+  }
 }
 
 .nutrition-example__title {
   @include font-size(36px, 40px);
 
   margin: 0 0 33px 0;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(60px, 60px);
+
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    margin-bottom: 146px;
+  }
 }
 
 .nutrition-example__description {
@@ -20,6 +55,23 @@
   font-family: "Arial", "Helvetica", sans-serif;
   color: $color-special-greydark;
   margin: 0 0 25px 0;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(16px, 24px);
+
+    margin-bottom: 54px;
+  }
+}
+
+.nutrition-example__stats {
+  @media (min-width: $media-width-tablet) {
+    justify-content: flex-start;
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .stats__parameter {
@@ -35,6 +87,7 @@
   min-width: 44%;
   vertical-align: baseline;
   position: relative;
+  background-color: inherit;
 
   &--weight-loss::after {
     @include font-size(12px, 12px);
@@ -47,7 +100,7 @@
     bottom: -21px;
     left: calc(100% / 2 - 47px);
     display: inline-block;
-    padding: 4px 14px;
+    padding: 4px 8px;
     width: 67px;
   }
 
@@ -62,8 +115,51 @@
     bottom: -21px;
     left: calc(100% / 2 - 47px);
     display: inline-block;
-    padding: 4px 14px;
+    padding: 4px 8px;
     width: 67px;
+  }
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(30px, 37px);
+
+    min-width: 24%;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+
+    &--weight-loss::after {
+      @include font-size(14px, 14px);
+
+      background-color: $color-basic-white;
+      width: 97px;
+      left: calc(100% / 2 - 58px);
+      bottom: -10px;
+    }
+
+    &--time-spent::after {
+      @include font-size(14px, 14px);
+
+      background-color: $color-basic-white;
+      width: 127px;
+      left: calc(100% / 2 - 72px);
+      bottom: -10px;
+    }
+
+    &:not(:first-child) {
+      margin-left: 42px;
+    }
+  }
+
+  @media (min-width: $media-width-desktop) {
+    width: 39%;
+    margin-bottom: 60px;
+
+    &--weight-loss::after {
+      background-color: $color-basic-greylighty;
+    }
+
+    &--time-spent::after {
+      background-color: $color-basic-greylighty;
+    }
   }
 }
 
@@ -71,7 +167,30 @@
   @include font-size(14px, 20px);
 
   width: 100%;
-  margin: 0;
+  margin: 0 0 42px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(20px, 20px);
+
+    width: 25%;
+    text-align: right;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    margin-left: 0;
+    width: 98%;
+    text-align: left;
+  }
+}
+
+.cost__value {
+  @media (min-width: $media-width-desktop) {
+    width: 48%;
+    display: inline-block;
+    text-align: right;
+  }
 }

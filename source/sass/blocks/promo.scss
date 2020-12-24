@@ -2,16 +2,37 @@
   width: 100%;
   padding-top: 27px;
   background-image:
-    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    linear-gradient(rgba($color-basic-green, 0.85), rgba($color-basic-green, 0.85)),
     url("../../img/promo-background@1x.jpg");
   background-size: 100% 62%;
   background-position: center top;
   background-repeat: no-repeat;
+
+  @media (min-width: $media-width-tablet) {
+    background: none;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    padding-top: 0;
+    padding-bottom: 54px;
+    justify-content: start;
+  }
 }
 
 .promo__inner-wrapper {
   width: 87.5%;
   text-align: center;
+
+  @media (min-width: $media-width-tablet) {
+    text-align: start;
+    width: 70%;
+    position: relative;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    width: 38.8%;
+    position: relative;
+  }
 }
 
 .promo__title {
@@ -19,6 +40,22 @@
 
   margin: 0 0 25px 0;
   color: $color-basic-white;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(60px, 60px);
+
+    color: $color-basic-black;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    @include font-size(60px, 60px);
+
+    width: 75%;
+    position: absolute;
+    top: 80px;
+    left: 32.5%;
+  }
 }
 
 .promo__description {
@@ -27,4 +64,35 @@
   margin: 0 0 29px 0;
   text-transform: uppercase;
   color: $color-basic-white;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(20px, 20px);
+
+    color: $color-basic-black;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    position: absolute;
+    top: 48%;
+    left: 32.5%;
+  }
+}
+
+.promo .action-link {
+  width: 87.5%;
+
+  @media (min-width: $media-width-tablet) {
+    position: absolute;
+    padding: 10px 24px;
+    width: 244px;
+    left: 15%;
+    top: 39%;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    padding: 15px 0;
+    top: 48%;
+    left: 12.8%;
+  }
 }
