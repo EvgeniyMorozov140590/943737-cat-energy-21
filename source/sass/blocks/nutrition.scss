@@ -24,8 +24,8 @@
   box-sizing: border-box;
   position: relative;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  & + & {
+    margin-top: 20px;
   }
 
   &--slimming::after {
@@ -53,8 +53,8 @@
   @media (min-width: $media-width-tablet) {
     padding: 77px 53px 53px;
 
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    & + & {
+      margin-top: 30px;
     }
 
     &--slimming::after {
@@ -73,8 +73,8 @@
   }
 
   @media (min-width: $media-width-desktop) {
-    &:not(:last-child) {
-      margin-bottom: 0;
+    & + & {
+      margin-top: 0;
     }
 
     &--slimming::after {

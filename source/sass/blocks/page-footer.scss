@@ -26,15 +26,15 @@
   width: 100%;
   border-bottom: 1px solid $color-basic-greylight;
 
+  .social-network__item:not(:first-child) {
+    padding-left: 37px;
+  }
+
   @media (min-width: $media-width-tablet) {
     width: 23%;
     border-bottom: 0;
     padding: 0;
   }
-}
-
-.social-network__item:not(:first-child) {
-  padding-left: 37px;
 }
 
 .developed__link {

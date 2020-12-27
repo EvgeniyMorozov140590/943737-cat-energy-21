@@ -15,7 +15,7 @@
   }
 }
 
-.slider__label {
+.nutrition-slider__label {
   @include font-size(16px, 20px);
 
   text-transform: uppercase;
@@ -28,11 +28,11 @@
   }
 }
 
-.slider__image {
+.nutrition-slider__image {
   margin-bottom: 27px;
 }
 
-.slider__bar {
+.nutrition-slider__bar {
   width: 84px;
   height: 14px;
   background-color: $color-basic-white;
@@ -51,7 +51,7 @@
   }
 }
 
-.slider__track {
+.nutrition-slider__track {
   display: none;
   height: 34px;
   width: 34px;
@@ -81,7 +81,7 @@
   }
 }
 
-.slider__scale {
+.nutrition-slider__scale {
   position: absolute;
   width: 35px;
   height: 6px;

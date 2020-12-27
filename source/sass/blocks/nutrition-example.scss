@@ -144,7 +144,7 @@
       bottom: -10px;
     }
 
-    &:not(:first-child) {
+    & + & {
       margin-left: 42px;
     }
   }
@@ -187,7 +187,7 @@
   }
 }
 
-.cost__value {
+.stats__value {
   @media (min-width: $media-width-desktop) {
     width: 48%;
     display: inline-block;
