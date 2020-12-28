@@ -31,12 +31,20 @@
   padding-bottom: 24px;
   border-top: 1px solid $color-basic-grey-verylight;
 
+  &:last-child {
+    border-bottom: 1px solid $color-basic-grey-verylight;
+  }
+
   @media (min-width: $media-width-tablet) {
     padding: 0;
     border: 0;
 
-    &:not(:first-child) {
+    & + & {
       margin-left: 34px;
+    }
+
+    &:last-child {
+      border-bottom: none;
     }
   }
 }

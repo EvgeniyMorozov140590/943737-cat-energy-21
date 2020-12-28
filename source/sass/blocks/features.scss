@@ -42,8 +42,8 @@
 .features__item {
   position: relative;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  & + & {
+    margin-top: 20px;
   }
 
   @media (min-width: $media-width-tablet) {
@@ -64,8 +64,8 @@
       color: $color-basic-grey;
     }
 
-    &:not(:last-child) {
-      margin-bottom: 0;
+    & + & {
+      margin-top: 0;
     }
   }
 

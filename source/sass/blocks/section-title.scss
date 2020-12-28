@@ -16,4 +16,42 @@
     top: 15px;
     left: 100%;
   }
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(36px, 36px);
+
+    margin-bottom: 76px;
+    padding-right: 40px;
+    max-width: 79%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 7.8vw;
+      border-top: 2px solid $color-basic-green;
+      top: 18px;
+      right: calc(100% + 40px);
+    }
+
+    &::before {
+      top: 18px;
+      width: calc(90vw - 100%);
+    }
+
+    &--spacing {
+      margin-bottom: 20px;
+    }
+
+    &--in-grid {
+      grid-row: 1;
+      grid-column: 1 / -1;
+      max-width: max-content;
+    }
+  }
+
+  @media (min-width: $media-width-desktop) {
+    &::before {
+      width: calc(92.2vw - 100%);
+    }
+  }
 }

@@ -9,27 +9,39 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--separated">
-    <div class="container flexible-between-center">
+  <header class="page-header flexible-centered">
+    <div class="page-header__inner-wrapper flexible-between-center">
       <a class="page-header__logo flexible-between-center" href="index.html" aria-label="на главную">
         <img src="./img/logo-mobile.svg" width="34" height="37" alt="кэт энерджи логотип">
         <img src="./img/logo-text.svg" width="101" height="18" alt="кэт энерджи надпись">
       </a>
-      <nav class="page-nav flexible-align-center">
-        <button class="page-nav__menu-button" type="button" aria-label="открыть меню сайта"></button>
-      </nav>
+      <button id="nav-menu-button" class="menu-button menu-button--menu-closed" type="button"
+        aria-label="открыть меню сайта"></button>
     </div>
+    <nav id="nav-menu" class="page-nav page-nav--closed">
+      <ul class="list page-nav__list">
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="./index.html">главная</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="./catalog.html">каталог продукции</a>
+        </li>
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="./form.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="page-main">
-    <div class="container">
+    <div class="page-main__title-wrapper">
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__description">
         Заполните анкету, и мы подберем
         программу питания для вашего кота
       </p>
     </div>
-    <form class="form" action="https://echo.htmlacademy.ru">
-      <fieldset class="form-group flexible-centered form-group--separated">
+    <form class="form flexible-column-center" action="https://echo.htmlacademy.ru">
+      <fieldset class="form-group form-group--half flexible-centered form-group--separated">
         <div class="form-group__inner-wrapper">
           <div class="form-group__input-wrapper">
             <input class="form-group__input" type="text" name="name" id="name" required>
@@ -47,9 +59,9 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="form-group flexible-centered form-group--separated">
+      <fieldset class="form-group form-group--half flexible-centered form-group--separated">
         <h2 class="visibility-hidden">Направление программы питания</h2>
-        <div class="form-group__inner-wrapper flexible-column">
+        <div class="form-group__inner-wrapper form-group__inner-wrapper--bordered flexible-column">
           <div class="form-group__input-radio-wrapper">
             <input class="input-radio visibility-hidden" type="radio" name="nutrition-type" id="slimming" checked>
             <label class="form-group__label-input-radio" for="slimming">похудение</label>
@@ -67,14 +79,14 @@
         </div>
       </fieldset>
       <fieldset class="form-group flexible-centered">
-        <div class="form-group__inner-wrapper">
-          <h2 class="section-title">Контактные данные (владельца кота)</h2>
-          <div class="form-group__input-wrapper">
+        <div class="form-group__inner-wrapper form-group__inner-wrapper--field-layout">
+          <h2 class="section-title section-title--in-grid">Контактные данные (владельца кота)</h2>
+          <div class="form-group__input-wrapper form-group__input-wrapper--row-layout">
             <input class="form-group__input input-icon input-icon--email" type="email" placeholder="kuklachev@gmail.com"
               name="email" id="email" required>
             <label class="form-group__label-input" for="email">e-mail:</label>
           </div>
-          <div class="form-group__input-wrapper">
+          <div class="form-group__input-wrapper form-group__input-wrapper--row-layout">
             <input class="form-group__input input-icon input-icon--phone" type="text" placeholder="8 (960) 900-60-90"
               name="phone" id="phone" required>
             <label class="form-group__label-input" for="phone">телефон:</label>
@@ -92,8 +104,8 @@
         </div>
       </fieldset>
       <fieldset class="form-group form-group--spacing flexible-centered">
-        <div class="form-group__inner-wrapper">
-          <h2 class="section-title">Дополнительно</h2>
+        <div class="form-group__inner-wrapper form-group__inner-wrapper--checkbox-layout">
+          <h2 class="section-title section-title--spacing section-title--in-grid">Дополнительно</h2>
           <div class="form-group__input-checkbox-wrapper">
             <input class="visibility-hidden input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
             <label class="form-group__label-input-checkbox" for="sweetener">сахарозаменитель</label>
@@ -119,16 +131,16 @@
     </form>
   </main>
   <footer class="page-footer">
-    <section class="contacts">
-      <div class="container flexible-between-center">
-        <h2 class="visibility-hidden">Контакты</h2>
-        <p class="contacts__invintation">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="contacts flexible-centered">
+      <h2 class="visibility-hidden">Контакты</h2>
+      <div class="contacts__inner-wrapper flexible-between-center">
+        <p class="contacts__invintation">приглашаем <br>к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
-      <iframe
+    </section>
+    <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003226!2d30.320858716213408!3d59.938719169053975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605379097367!5m2!1sru!2sru"
         class="contacts__map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </section>
     <div class="page-footer__bottom-container container flexible-column-center">
       <a class="page-footer__logo" href="index.html" aria-label="на главную">
         <img src="./img/logo-text.svg" width="128" height="24" alt="кэт энерджи надпись">
@@ -172,6 +184,7 @@
       </a>
     </div>
   </footer>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
