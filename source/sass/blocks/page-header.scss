@@ -4,6 +4,10 @@
 
   &--separated {
     border-bottom: 1px solid $color-basic-greylight;
+
+    @media (min-width: $media-width-tablet) {
+      border: none;
+    }
   }
 
 
