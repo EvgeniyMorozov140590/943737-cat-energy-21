@@ -47,11 +47,19 @@
       grid-column: 1 / -1;
       max-width: max-content;
     }
+
+    &--left-indent {
+      margin-left: 40px;
+    }
   }
 
   @media (min-width: $media-width-desktop) {
     &::before {
       width: calc(92.2vw - 100%);
+    }
+
+    &--left-indent {
+      margin-left: 0;
     }
   }
 }
