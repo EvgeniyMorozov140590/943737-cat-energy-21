@@ -13,31 +13,83 @@
   border-bottom: 1px solid $color-basic-greylight;
   text-align: center;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $media-width-tablet) {
-    width: 11%;
+    width: 21%;
     border-bottom: 0;
     padding: 0;
+    text-align: left;
   }
 }
 
 .social-network__list {
   padding-top: 23px;
-  padding-bottom: 24px;
+  padding-bottom: 14px;
   width: 100%;
   border-bottom: 1px solid $color-basic-greylight;
 
   .social-network__item:not(:first-child) {
     padding-left: 37px;
+
+    @media (min-width: $media-width-tablet) {
+      padding-left: 28px;
+    }
   }
 
   @media (min-width: $media-width-tablet) {
-    width: 23%;
+    width: 20%;
     border-bottom: 0;
     padding: 0;
   }
+
+  @media (min-width: $media-width-desktop) {
+    justify-content: flex-start;
+    width: 19%;
+  }
 }
 
-.developed__link {
+
+.social-network__link {
+  color: $color-special-grey-darkylight;
+
+  &:hover {
+    color: $color-basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-network__icon-vk {
+  @media (min-width: $media-width-tablet) {
+    width: 30px;
+    height: auto;
+  }
+}
+
+.social-network__icon-instagram {
+  @media (min-width: $media-width-tablet) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social-network__icon-facebook {
+  @media (min-width: $media-width-tablet) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.page-footer__developed-link {
   @include font-size(16px, 18px);
 
   font-family: "Arial", "Helvetica", sans-serif;
@@ -46,9 +98,21 @@
   text-decoration: none;
   width: 100%;
 
+  &:hover .icon-academy {
+    color: $color-basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $media-width-tablet) {
     width: 23%;
     padding: 0;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    width: 13.5%;
   }
 }
 
@@ -60,6 +124,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 55px;
   }
 }

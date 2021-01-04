@@ -1,15 +1,15 @@
 .nutrition-slider {
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 31px;
   background-color: inherit;
   text-align: center;
 
   @media (min-width: $media-width-tablet) {
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $media-width-desktop) {
-    width: 54.5%;
+    width: 42.5%;
     padding-bottom: 0;
     align-items: flex-end;
   }
@@ -21,15 +21,80 @@
   text-transform: uppercase;
   margin: 0;
 
+  &:hover {
+    border-bottom-style: solid;
+    border-color: rgba($color-basic-black, 0.4);
+  }
+
+  &:active {
+    border-bottom-color: transparent;
+  }
+
   @media (min-width: $media-width-tablet) {
     @include font-size(20px, 30px);
 
-    border-bottom: 1px dotted $color-basic-black;
+    border-bottom: 1px dotted rgba($color-basic-black, 0.24);
   }
 }
 
-.nutrition-slider__image {
+.nutrition-slider__image-wrapper {
+  @include flexible();
+
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $media-width-tablet) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    align-items: flex-start;
+    margin-bottom: 27px;
+  }
+}
+
+.nutrition-slider__image-cat-fat {
   margin-bottom: 27px;
+  width: 311px;
+  min-height: 232px;
+  background-repeat: no-repeat;
+  background-image: url("./../img/cat-slider-mobile@1x.png");
+
+  @media (min-width: $media-width-tablet) {
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 0;
+    height: 520px;
+    background-position: calc(100% + 338px) 5px;
+    background-image: url("./../img/cat-slider-fat@1x.png");
+  }
+
+  @media (min-width: $media-width-desktop) {
+    width: 53%;
+    background-position: calc(100% + 312px) -8px;
+  }
+}
+
+.nutrition-slider__image-cat-skinny {
+  display: none;
+
+  @media (min-width: $media-width-tablet) {
+    background-repeat: no-repeat;
+    background-position: -250px 20px;
+    display: block;
+    width: 50%;
+    object-fit: cover;
+
+    height: 545px;
+    background-image: url("./../img/cat-slider-skinny@1x.png");
+  }
+
+  @media (min-width: $media-width-desktop) {
+    width: 47%;
+    height: 510px;
+    background-position: -271px -4px;
+  }
 }
 
 .nutrition-slider__bar {
@@ -39,11 +104,12 @@
   border: 1px solid $color-special-grey;
   box-sizing: border-box;
   border-radius: 6px;
-  margin: 0 13px;
+  margin-left: 15px;
+  margin-right: 20px;
   position: relative;
 
   @media (min-width: $media-width-tablet) {
-    width: 428px;
+    width: 74%;
     background-color: $color-special-grey-darklight;
     height: 6px;
     border: none;
@@ -51,15 +117,35 @@
   }
 }
 
+.nutrition-slider__controls {
+  width: 100%;
+
+  @media (min-width: $media-width-tablet) {
+    width: 74.5%;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    width: 93.5%;
+  }
+}
+
 .nutrition-slider__track {
   display: none;
   height: 34px;
-  width: 34px;
+  width: 35px;
   border-radius: 50%;
   border: 1px solid $color-special-grey;
   box-sizing: border-box;
   background-color: $color-basic-white;
   filter: drop-shadow(0 1px 3px rgba($color-basic-black, 0.16));
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px rgba($color-basic-black, 0.19));
+  }
+
+  &:active {
+    border-color: $color-basic-green;
+  }
 
   @media (min-width: $media-width-tablet) {
     display: block;

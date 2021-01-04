@@ -11,7 +11,7 @@
 }
 
 .promotion__inner-wrapper {
-  background-image: url("../../img/promotion-gift-mobile@1x.jpg");
+  background-image: url("./../img/promotion-gift-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -24,11 +24,11 @@
     padding: 0;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url("../../img/promotion-gift-tablet@1x.jpg");
+    background-image: url("./../img/promotion-gift-tablet@1x.jpg");
   }
 
   @media (min-width: $media-width-desktop) {
-    background-image: url("../../img/promotion-gift-mobile@1x.jpg");
+    background-image: url("./../img/promotion-gift-mobile@1x.jpg");
     min-height: 289px;
     flex-direction: column;
     padding: 64px 0 43px;
@@ -36,7 +36,7 @@
 }
 
 .promotion__gift-icon {
-  background-image: url("../../img/icon-gift.svg");
+  background-image: url("./../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center center;
   width: 78px;

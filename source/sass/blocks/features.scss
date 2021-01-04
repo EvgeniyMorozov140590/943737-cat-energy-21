@@ -1,9 +1,10 @@
 .features {
   padding-top: 27px;
-  padding-bottom: 42px;
+  padding-bottom: 46px;
 
   @media (min-width: $media-width-tablet) {
-    padding-top: 45px;
+    padding-top: 46px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $media-width-desktop) {
@@ -30,7 +31,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    column-gap: 137px;
+    column-gap: 60px;
   }
 
   @media (min-width: $media-width-desktop) {
@@ -47,7 +48,7 @@
   }
 
   @media (min-width: $media-width-tablet) {
-    padding-top: 40px;
+    padding-top: 45px;
     flex-direction: column;
     align-items: flex-start;
     min-height: 280px;
@@ -59,7 +60,7 @@
       counter-increment: list;
       content: counter(list);
       position: absolute;
-      right: 50px;
+      right: 80px;
       top: 0;
       color: $color-basic-grey;
     }
@@ -79,28 +80,30 @@
 .features__icon {
   width: 60px;
   height: 60px;
-  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 
   &--functional {
-    background-image: url("../../img/feature-functional.svg");
+    background-image: url("./../img/feature-functional.svg");
   }
 
   &--powder {
-    background-image: url("../../img/feature-powder.svg");
+    background-image: url("./../img/feature-powder.svg");
   }
 
   &--meal {
-    background-image: url("../../img/feature-meal.svg");
+    background-image: url("./../img/feature-meal.svg");
   }
 
   &--period {
-    background-image: url("../../img/feature-period.svg");
+    background-image: url("./../img/feature-period.svg");
   }
 
   @media (min-width: $media-width-tablet) {
     width: 80px;
     height: 80px;
     margin-bottom: 31px;
+    background-color: $color-basic-green;
   }
 }
 
@@ -122,7 +125,7 @@
   @media (min-width: $media-width-tablet) {
     @include font-size(16px, 24px);
 
-    width: 85.9%;
+    width: 81%;
     margin-left: 0;
     z-index: $layer-second;
 

@@ -12,6 +12,14 @@
   text-align: center;
   width: 100%;
 
+  &:hover {
+    background-color: $color-special-green;
+  }
+
+  &:active {
+    color: rgba($color-basic-white, 0.3);
+  }
+
   @media (min-width: $media-width-tablet) {
     @include font-size(20px, 20px);
   }
