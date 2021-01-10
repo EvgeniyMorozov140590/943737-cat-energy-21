@@ -8,6 +8,15 @@
   color: $color-basic-white;
   border: none;
   margin-bottom: 21px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-special-green;
+  }
+
+  &:active {
+    color: rgba($color-basic-white, 0.3);
+  }
 
   &--regular {
     background-color: $color-basic-grey;

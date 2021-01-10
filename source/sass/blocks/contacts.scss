@@ -9,7 +9,9 @@
   box-sizing: border-box;
 
   &--light {
-    background-color: $color-basic-white;
+    @media (min-width: $media-width-desktop) {
+      background-color: $color-basic-white;
+    }
   }
 
   @media (min-width: $media-width-tablet) {
@@ -49,7 +51,7 @@
   max-width: 140px;
 
   @media (min-width: $media-width-tablet) {
-    @include font-size(20px, 21px);
+    @include font-size(20px, 25px);
 
     max-width: 154px;
   }

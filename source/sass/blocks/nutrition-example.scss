@@ -75,7 +75,7 @@
 .nutrition-example__stats {
   @media (min-width: $media-width-tablet) {
     justify-content: flex-start;
-    padding-bottom: 64px;
+    padding-bottom: 61px;
   }
 
   @media (min-width: $media-width-desktop) {
@@ -184,7 +184,7 @@
   text-align: center;
 
   @media (min-width: $media-width-tablet) {
-    @include font-size(20px, 20px);
+    @include font-size(20px, 30px);
 
     width: 25%;
     text-align: right;
