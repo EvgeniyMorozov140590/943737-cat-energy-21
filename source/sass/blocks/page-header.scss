@@ -10,21 +10,20 @@
     }
   }
 
-
   @media (min-width: $media-width-tablet) {
-    padding-top: 24px;
+    padding-top: 27px;
     flex-direction: row;
   }
 
   @media (min-width: $media-width-desktop) {
-    padding-top: 69px;
+    padding-top: 52px;
   }
 
   @media (min-width: $media-width-desktop) {
     &--promo {
       background-image:
         linear-gradient(rgba($color-basic-green, 0.85), rgba($color-basic-green, 0.85)),
-        url("../../img/header-background-desktop@1x.jpg");
+        url("./../img/header-background-desktop@1x.jpg");
       background-size: 50% 100%;
       background-position: right bottom;
       background-repeat: no-repeat;
@@ -46,10 +45,34 @@
 }
 
 .page-header__logo {
+  @media (min-width: $media-width-tablet) {
+    width: 174px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    width: 202px;
+  }
+}
+
+.page-header__logo-wrapper {
   min-width: 190px;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $media-width-tablet) {
     min-width: 174px;
+  }
+}
+
+.page-header__logo-text {
+  @media (min-width: $media-width-tablet) {
+    display: none;
   }
 }

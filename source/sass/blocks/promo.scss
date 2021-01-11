@@ -3,17 +3,18 @@
   padding-top: 27px;
   background-image:
     linear-gradient(rgba($color-basic-green, 0.85), rgba($color-basic-green, 0.85)),
-    url("../../img/promo-background@1x.jpg");
-  background-size: 100% 62%;
+    url("./../img/promo-background@1x.jpg");
+  background-size: 100% 63%;
   background-position: center top;
   background-repeat: no-repeat;
 
   @media (min-width: $media-width-tablet) {
     background: none;
+    padding-top: 42px;
   }
 
   @media (min-width: $media-width-desktop) {
-    padding-top: 0;
+    padding-top: 9px;
     padding-bottom: 54px;
     justify-content: start;
   }
@@ -53,8 +54,8 @@
 
     width: 75%;
     position: absolute;
-    top: 80px;
-    left: 32.5%;
+    top: 83px;
+    left: 34%;
   }
 }
 
@@ -74,8 +75,8 @@
 
   @media (min-width: $media-width-desktop) {
     position: absolute;
-    top: 48%;
-    left: 32.5%;
+    top: 48.5%;
+    left: 34%;
   }
 }
 
@@ -84,15 +85,16 @@
 
   @media (min-width: $media-width-tablet) {
     position: absolute;
-    padding: 10px 24px;
+    padding-bottom: 16px;
+    padding-top: 17px;
     width: 244px;
-    left: 15%;
-    top: 39%;
+    left: 14.5%;
+    top: 40%;
   }
 
   @media (min-width: $media-width-desktop) {
     padding: 15px 0;
-    top: 48%;
-    left: 12.8%;
+    top: 49.5%;
+    left: 13.2%;
   }
 }

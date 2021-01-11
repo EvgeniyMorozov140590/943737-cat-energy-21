@@ -55,6 +55,15 @@
   text-transform: uppercase;
   color: $color-basic-black;
   text-decoration: none;
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $media-width-tablet) {
     @include font-size(18px, 24px);
@@ -62,9 +71,29 @@
 
   @media (min-width: $media-width-desktop) {
     @include font-size(20px, 30px);
+  }
+}
 
-    &--promo {
-      color: $color-basic-white;
+.page-nav__link--active {
+  &::before {
+    @media (min-width: $media-width-tablet) {
+      content: "";
+      width: 100%;
+      border-bottom: 2px solid $color-basic-green;
+      position: absolute;
+      bottom: -10px;
+    }
+  }
+}
+
+.page-nav__link--promo {
+  @media (min-width: $media-width-desktop) {
+    color: $color-basic-white;
+  }
+
+  &::before {
+    @media (min-width: $media-width-desktop) {
+      border-color: $color-basic-white;
     }
   }
 }
