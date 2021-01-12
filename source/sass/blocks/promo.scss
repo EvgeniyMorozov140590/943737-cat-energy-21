@@ -7,6 +7,7 @@
   background-size: 100% 63%;
   background-position: center top;
   background-repeat: no-repeat;
+  position: relative;
 
   @media (min-width: $media-width-tablet) {
     background: none;
@@ -89,12 +90,12 @@
     padding-top: 17px;
     width: 244px;
     left: 14.5%;
-    top: 40%;
+    top: 32%;
   }
 
   @media (min-width: $media-width-desktop) {
     padding: 15px 0;
-    top: 49.5%;
+    top: 58%;
     left: 13.2%;
   }
 }
