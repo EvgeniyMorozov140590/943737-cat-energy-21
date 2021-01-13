@@ -17,9 +17,17 @@
   &:active {
     color: rgba($color-basic-white, 0.3);
   }
+}
 
-  &--regular {
-    background-color: $color-basic-grey;
-    color: $color-special-greydark;
+.action-button--regular {
+  background-color: $color-basic-grey;
+  color: $color-special-greydark;
+
+  &:hover {
+    background-color: $color-special-greylight;
+  }
+
+  &:active {
+    color: rgba($color-special-greydark, 0.3);
   }
 }

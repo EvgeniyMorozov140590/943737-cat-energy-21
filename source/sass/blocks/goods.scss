@@ -54,7 +54,8 @@
   @media (min-width: $media-width-tablet) {
     min-height: 207px;
     padding: 0;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
+    justify-content: flex-end;
   }
 }
 
@@ -84,6 +85,7 @@
 
   @media (min-width: $media-width-tablet) {
     padding-bottom: 33px;
+    margin: 0;
   }
 }
 
@@ -142,6 +144,7 @@
   padding-bottom: 25px;
   border-top: 1px solid $color-special-greylight;
   box-sizing: border-box;
+  min-height: 190px;
 
   @media (min-width: $media-width-tablet) {
     min-height: 511px;
@@ -176,7 +179,7 @@
   @media (min-width: $media-width-tablet) {
     width: 100%;
     border: 2px solid $color-basic-grey;
-    padding: 52px 37px 37px;
+    padding: 48px 37px 37px;
     min-height: 84%;
   }
 }
@@ -239,7 +242,7 @@
 
   font-family: "Arial", "Helvetica", sans-serif;
   color: $color-special-greydark;
-  margin: 0 0 31px;
+  margin: 0 0 22px;
 
   @media (min-width: $media-width-tablet) {
     @include font-size(16px, 18px);
