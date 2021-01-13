@@ -2,12 +2,14 @@
   padding-right: 45px;
   border-color: $color-special-grey;
 
-  &:focus:valid + &__icon {
+  &:focus:valid + .input-with-icon__icon {
     stroke: $color-basic-green;
+    fill: $color-basic-green;
   }
 
-  &:focus:invalid + &__icon {
+  &:focus:invalid + .input-with-icon__icon {
     stroke: $color-basic-red;
+    fill: $color-basic-red;
   }
 }
 
@@ -15,4 +17,5 @@
   position: absolute;
   right: 15px;
   stroke: $color-special-greydarky;
+  fill: $color-basic-black;
 }

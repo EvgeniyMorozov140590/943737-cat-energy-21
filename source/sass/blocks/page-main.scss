@@ -45,4 +45,17 @@
 
     padding-top: 58px;
   }
+
+  &--no-spacing {
+    padding-bottom: 0;
+
+    @media (min-width: $media-width-tablet) {
+      width: 92.5%;
+      padding-bottom: 32px;
+    }
+
+    @media (min-width: $media-width-desktop) {
+      width: 84.5%;
+    }
+  }
 }
