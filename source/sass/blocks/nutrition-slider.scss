@@ -59,15 +59,23 @@
   width: 311px;
   min-height: 232px;
   background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("./../img/cat-slider-mobile@1x.png");
+
+  @media (min-resolution: $media-min-resolution-retina) {
+    background-image: url("./../img/cat-slider-mobile@2x.png");
+  }
 
   @media (min-width: $media-width-tablet) {
     width: 50%;
-    object-fit: cover;
     margin-bottom: 0;
     height: 520px;
     background-position: calc(100% + 338px) 5px;
     background-image: url("./../img/cat-slider-fat@1x.png");
+
+    @media (min-resolution: $media-min-resolution-retina) {
+      background-image: url("./../img/cat-slider-fat@2x.png");
+    }
   }
 
   @media (min-width: $media-width-desktop) {
@@ -78,16 +86,19 @@
 
 .nutrition-slider__image-cat-skinny {
   display: none;
+  background-size: cover;
 
   @media (min-width: $media-width-tablet) {
     background-repeat: no-repeat;
-    background-position: -250px 20px;
+    background-position: -260px 10px;
     display: block;
     width: 50%;
-    object-fit: cover;
-
     height: 545px;
     background-image: url("./../img/cat-slider-skinny@1x.png");
+
+    @media (min-resolution: $media-min-resolution-retina) {
+      background-image: url("./../img/cat-slider-skinny@2x.png");
+    }
   }
 
   @media (min-width: $media-width-desktop) {

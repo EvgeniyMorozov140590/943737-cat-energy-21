@@ -14,3 +14,5 @@ navMenuButton.addEventListener('click', function() {
     menu.classList.toggle('page-nav--closed', false);
   }
 });
+
+navMenuButton.dispatchEvent(new Event('click'));

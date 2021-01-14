@@ -12,7 +12,7 @@
 
   @media (min-width: $media-width-desktop) {
     border-top: none;
-    padding-bottom: 68px;
+    padding-bottom: 65px;
     padding-top: 0;
     background-image: linear-gradient(to right, $color-basic-grey 72.5%, $color-basic-greylighty 27.5%);
     background-size: 100% 72%;
@@ -163,7 +163,7 @@
 
   @media (min-width: $media-width-desktop) {
     width: 32.5%;
-    margin-bottom: 59px;
+    margin-bottom: 51px;
 
     &--weight-loss::after {
       background-color: $color-basic-grey;
