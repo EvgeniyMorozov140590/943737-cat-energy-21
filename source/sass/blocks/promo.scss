@@ -9,6 +9,12 @@
   background-repeat: no-repeat;
   position: relative;
 
+  @media (min-resolution: $media-min-resolution-retina) {
+    background-image:
+      linear-gradient(rgba($color-basic-green, 0.85), rgba($color-basic-green, 0.85)),
+      url("./../img/promo-background@2x.jpg");
+  }
+
   @media (min-width: $media-width-tablet) {
     background: none;
     padding-top: 42px;

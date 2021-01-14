@@ -18,10 +18,10 @@
         </picture>
         <img class="page-header__logo-text" src="./img/logo-text.svg" width="101" height="18" alt="кэт энерджи надпись">
       </a>
-      <button id="nav-menu-button" class="menu-button menu-button--menu-closed" type="button"
+      <button id="nav-menu-button" class="menu-button menu-button--menu-opened" type="button"
         aria-label="открыть меню сайта"></button>
     </div>
-    <nav id="nav-menu" class="page-nav page-nav--closed">
+    <nav id="nav-menu" class="page-nav">
       <ul class="list page-nav__list">
         <li class="page-nav__item">
           <a class="page-nav__link page-nav__link--active page-nav__link--promo" href="./index.html">главная</a>
@@ -40,9 +40,9 @@
         <p class="promo__description">занялся собой? займись котом!</p>
       </div>
       <picture>
-        <source media="(min-width: 1440px)" srcset="./img/promo-image-desktop@1x.png">
-        <source media="(min-width: 768px)" srcset="./img/promo-image-tablet@1x.png">
-        <img class="promo__image" src="./img/promo-image-mobile@1x.png" alt="банка c кормом">
+        <source media="(min-width: 1440px)" srcset="./img/promo-image-desktop@1x.png 1x, ./img/promo-image-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="./img/promo-image-tablet@1x.png 1x, ./img/promo-image-tablet@2x.png 2x">
+        <img class="promo__image" src="./img/promo-image-mobile@1x.png" srcset="./img/promo-image-mobile@2x.png 2x" alt="банка c кормом">
       </picture>
       <a href="./form.html" class="action-link">подобрать программу</a>
     </section>
