@@ -19,19 +19,31 @@
   box-sizing: border-box;
   min-height: 289px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../img/promotion-gift-mobile@2x.jpg");
+  }
+
   @media (min-width: $media-width-tablet) {
     min-height: 200px;
     padding: 0;
     flex-direction: row;
     justify-content: space-between;
     background-image: url("./../img/promotion-gift-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/promotion-gift-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $media-width-desktop) {
-    background-image: url("./../img/promotion-gift-mobile@1x.jpg");
+    background-image: url("./../img/promotion-gift-desktop@1x.jpg");
     min-height: 289px;
     flex-direction: column;
     padding: 64px 0 43px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/promotion-gift-desktop@2x.jpg");
+    }
   }
 }
 
