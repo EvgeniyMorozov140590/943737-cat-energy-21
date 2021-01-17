@@ -1,0 +1,7 @@
+<svg fill="none" viewBox="0 0 20 15">
+  <line x1="1.65" x2="1.65" y1="5.8477" y2="13.848" stroke-width="1.3"/>
+  <line x1="18.65" x2="18.65" y1="5.8477" y2="13.848" stroke-width="1.3"/>
+  <line x1="1" x2="19" y1="13.198" y2="13.198" stroke-width="1.3"/>
+  <line x1="1" x2="19" y1="1.1977" y2="1.1977" stroke-width="1.3"/>
+  <path d="m18.35 3.0298-8.35 6.4944-8.35-6.4944v-1.5321h2.85 5.5 8.35v1.5321z" fill="none"  stroke-width="1.3"/>
+</svg>
