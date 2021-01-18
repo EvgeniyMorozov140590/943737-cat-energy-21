@@ -1,8 +1,8 @@
-const navMenuButton = document.querySelector('#nav-menu-button');
+var navMenuButton = document.querySelector('#nav-menu-button');
 
 navMenuButton.addEventListener('click', function() {
-  const menuOpened = this.classList.contains('menu-button--menu-opened');
-  const menu = document.querySelector('#nav-menu');
+  var menuOpened = this.classList.contains('menu-button--menu-opened');
+  var menu = document.querySelector('#nav-menu');
 
   if (menuOpened) {
     this.classList.toggle('menu-button--menu-opened', false);
