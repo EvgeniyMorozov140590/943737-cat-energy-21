@@ -5,6 +5,10 @@
   width: 24px;
   height: 16px;
   position: relative;
+
+  &--hide {
+    visibility: hidden;
+  }
 }
 
 .menu-button--menu-closed {

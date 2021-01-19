@@ -7,6 +7,10 @@
   }
 }
 
+.goods .action-link {
+  @include font-size(16px, 20px);
+}
+
 .goods__list {
   display: grid;
   grid-template-columns: 1fr;
@@ -75,6 +79,11 @@
 
   @media (min-width: $media-width-desktop) {
     width: 90%;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -152,10 +161,6 @@
     padding: 0;
     border-top: none;
   }
-}
-
-.goods__item .action-button {
-  margin-bottom: 0;
 }
 
 .goods__show-all {
@@ -256,7 +261,6 @@
   }
 }
 
-.goods__show-all .action-button {
-  margin-bottom: 0;
+.goods__show-all .action-link {
   grid-column: 1 / span 2;
 }

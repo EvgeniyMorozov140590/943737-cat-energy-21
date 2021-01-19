@@ -105,6 +105,11 @@
   order: 1;
   outline: none;
 
+  &--invalid {
+    border-width: 2px;
+    border-color: $color-basic-red;
+  }
+
   &:hover {
     border-color: $color-special-grey;
   }

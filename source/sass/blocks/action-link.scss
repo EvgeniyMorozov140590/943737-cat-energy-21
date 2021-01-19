@@ -24,3 +24,18 @@
     @include font-size(20px, 20px);
   }
 }
+
+.action-link--regular {
+  @include font-size(16px, 20px);
+
+  background-color: $color-basic-grey;
+  color: $color-special-greydark;
+
+  &:hover {
+    background-color: $color-special-greylight;
+  }
+
+  &:active {
+    color: rgba($color-special-greydark, 0.3);
+  }
+}

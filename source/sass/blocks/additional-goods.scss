@@ -107,8 +107,8 @@
   }
 }
 
-.additional-goods__item .action-button {
-  margin: 0;
+.additional-goods__item .action-link {
+  @include font-size(16px, 20px);
 
   @media (min-width: $media-width-tablet) {
     margin-top: 22px;
