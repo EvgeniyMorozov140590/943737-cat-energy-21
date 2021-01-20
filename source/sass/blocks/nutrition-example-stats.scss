@@ -1,0 +1,134 @@
+.nutrition-example-stats {
+  @media (min-width: $media-width-tablet) {
+    justify-content: flex-start;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    padding-bottom: 0;
+  }
+}
+
+.nutrition-example-stats__parameter {
+  @include font-size(24px, 24px);
+
+  margin: 0 0 34px 0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid $color-special-grey;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 10px 18px;
+  display: inline-block;
+  min-width: 44%;
+  vertical-align: baseline;
+  position: relative;
+  background-color: inherit;
+
+  &--weight-loss::after {
+    @include font-size(12px, 12px);
+
+    content: "снижение веса";
+    font-family: "Arial", "Helvetica", sans-serif;
+    position: absolute;
+    color: $color-special-greydark;
+    background-color: $color-basic-greylighty;
+    bottom: -17px;
+    left: calc(100% / 2 - 43px);
+    display: inline-block;
+    padding: 4px 8px;
+    width: 67px;
+    text-transform: none;
+  }
+
+  &--time-spent::after {
+    @include font-size(12px, 12px);
+
+    content: "затрачено времени";
+    font-family: "Arial", "Helvetica", sans-serif;
+    position: absolute;
+    color: $color-special-greydark;
+    background-color: $color-basic-greylighty;
+    bottom: -17px;
+    left: calc(100% / 2 - 43px);
+    display: inline-block;
+    padding: 4px 8px;
+    width: 67px;
+    text-transform: none;
+  }
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(30px, 37px);
+
+    min-width: 23%;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+
+    &--weight-loss::after {
+      @include font-size(14px, 14px);
+
+      background-color: $color-basic-white;
+      width: 97px;
+      left: calc(100% / 2 - 58px);
+      bottom: -10px;
+    }
+
+    &--time-spent::after {
+      @include font-size(14px, 14px);
+
+      background-color: $color-basic-white;
+      width: 127px;
+      left: calc(100% / 2 - 72px);
+      bottom: -10px;
+    }
+
+    & + & {
+      margin-left: 42px;
+    }
+  }
+
+  @media (min-width: $media-width-desktop) {
+    width: 32.5%;
+    margin-bottom: 51px;
+
+    &--weight-loss::after {
+      background-color: $color-basic-grey;
+    }
+
+    &--time-spent::after {
+      background-color: $color-basic-grey;
+    }
+  }
+}
+
+.nutrition-example-stats__cost {
+  @include font-size(14px, 20px);
+
+  width: 100%;
+  margin: 0 0 42px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $media-width-tablet) {
+    @include font-size(20px, 30px);
+
+    width: 25%;
+    text-align: right;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $media-width-desktop) {
+    margin-left: 0;
+    width: 98%;
+    text-align: left;
+  }
+}
+
+.nutrition-example-stats__value {
+  @media (min-width: $media-width-desktop) {
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+  }
+}

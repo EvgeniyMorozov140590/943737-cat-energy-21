@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header page-header--promo flexible-centered">
     <div class="page-header__inner-wrapper flexible-between-center">
       <a class="page-header__logo-wrapper flexible-between-center" href="index.html" aria-label="на главную">
@@ -120,10 +120,10 @@
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="nutrition-example__stats flexible-between-center">
-          <p class="stats__parameter stats__parameter--weight-loss">5 кг</p>
-          <p class="stats__parameter stats__parameter--time-spent">60 дней</p>
-          <p class="stats__cost">затраты на питание: <span class="stats__value">15 000 руб.</span></p>
+        <div class="nutrition-example-stats flexible-between-center">
+          <p class="nutrition-example-stats__parameter nutrition-example-stats__parameter--weight-loss">5 кг</p>
+          <p class="nutrition-example-stats__parameter nutrition-example-stats__parameter--time-spent">60 дней</p>
+          <p class="nutrition-example-stats__cost">затраты на питание: <span class="nutrition-example-stats__value">15 000 руб.</span></p>
         </div>
       </div>
       <div class="nutrition-slider flexible-column-center">
@@ -136,7 +136,7 @@
           <p class="nutrition-slider__label">было</p>
           <div class="nutrition-slider__bar">
             <div class="nutrition-slider__scale"></div>
-            <div class="nutrition-slider__track"></div>
+            <button class="nutrition-slider__track" aria-label="ползунок слайдера"></button>
           </div>
           <p class="nutrition-slider__label">стало</p>
         </div>
@@ -153,29 +153,29 @@
     </section>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003226!2d30.320858716213408!3d59.938719169053975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605379097367!5m2!1sru!2sru"
-      class="contacts__map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      class="page-footer__map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="page-footer__bottom-container container flexible-column-center">
       <a class="page-footer__logo" href="index.html" aria-label="на главную">
         <img src="./img/logo-text.svg" width="128" height="24" alt="кэт энерджи надпись">
       </a>
-      <ul class="social-network__list list flexible-centered">
-        <li class="social-network__item">
-          <a class="social-network__link" href="">
-            <svg class="social-network__icon-vk" width="23" height="16">
+      <ul class="social-network-list list flexible-centered">
+        <li class="social-network-list__item">
+          <a class="social-network-list__link" href="">
+            <svg class="social-network-list__icon-vk" width="23" height="16">
               <use xlink:href="./img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
-        <li class="social-network__item">
-          <a class="social-network__link" href="">
-            <svg class="social-network__icon-instagram" width="16" height="16">
+        <li class="social-network-list__item">
+          <a class="social-network-list__link" href="">
+            <svg class="social-network-list__icon-instagram" width="16" height="16">
               <use xlink:href="./img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="social-network__item">
-          <a class="social-network__link" href="">
-            <svg class="social-network__icon-facebook" width="22" height="22">
+        <li class="social-network-list__item">
+          <a class="social-network-list__link" href="">
+            <svg class="social-network-list__icon-facebook" width="22" height="22">
                 <use xlink:href="./img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>

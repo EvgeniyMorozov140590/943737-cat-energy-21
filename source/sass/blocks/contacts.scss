@@ -1,9 +1,3 @@
-.page-footer {
-  @media (min-width: $media-width-desktop) {
-    position: relative;
-  }
-}
-
 .contacts {
   padding-top: 28px;
   box-sizing: border-box;
@@ -83,15 +77,5 @@
 
   @media (min-width: $media-width-desktop) {
     text-align: left;
-  }
-}
-
-.contacts__map {
-  width: 100%;
-  height: 362px;
-  border: 0;
-
-  @media (min-width: $media-width-tablet) {
-    height: 400px;
   }
 }
