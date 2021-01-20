@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header page-header--separated flexible-centered">
     <div class="page-header__inner-wrapper flexible-between-center">
       <a class="page-header__logo-wrapper flexible-between-center" href="index.html" aria-label="на главную">
@@ -90,7 +90,7 @@
           <div class="form-group__input-wrapper form-group__input-wrapper--row-layout">
             <input class="form-group__input input-with-icon" type="email" placeholder="kuklachev@gmail.com"
               name="email" id="email" required>
-            <svg class="input-with-icon__icon" width="20" height="15">
+            <svg class="input-icon" width="20" height="15">
               <use xlink:href="./img/sprite.svg#icon-email"></use>
             </svg>
             <label class="form-group__label-input" for="email">e-mail:</label>
@@ -98,7 +98,7 @@
           <div class="form-group__input-wrapper form-group__input-wrapper--row-layout">
             <input class="form-group__input input-with-icon" type="tel" placeholder="8 (960) 900-60-90"
               name="phone" id="phone" pattern="\d ((\(\d{3}\) ?)(\d{3}-))?\d{2}-\d{2}" required>
-            <svg class="input-with-icon__icon" width="20" height="21">
+            <svg class="input-icon" width="20" height="21">
               <use xlink:href="./img/sprite.svg#icon-phone"></use>
             </svg>
             <label class="form-group__label-input" for="phone">телефон:</label>
@@ -138,7 +138,7 @@
       </fieldset>
       <section class="form__actions container flexible-centered">
         <button class="action-button" type="submit">отправить заявку</button>
-        <p class="actions__footnote">* — Обязательные поля</p>
+        <p class="form__footnote">* — Обязательные поля</p>
       </section>
     </form>
   </main>
@@ -152,29 +152,29 @@
     </section>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003226!2d30.320858716213408!3d59.938719169053975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605379097367!5m2!1sru!2sru"
-      class="contacts__map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      class="page-footer__map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="page-footer__bottom-container container flexible-column-center">
       <a class="page-footer__logo" href="index.html" aria-label="на главную">
         <img src="./img/logo-text.svg" width="128" height="24" alt="кэт энерджи надпись">
       </a>
-      <ul class="social-network__list list flexible-centered">
-        <li class="social-network__item">
-          <a class="social-network__link" href="">
-            <svg class="social-network__icon-vk" width="23" height="16">
+      <ul class="social-network-list list flexible-centered">
+        <li class="social-network-list__item">
+          <a class="social-network-list__link" href="">
+            <svg class="social-network-list__icon-vk" width="23" height="16">
               <use xlink:href="./img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
-        <li class="social-network__item">
-          <a class="social-network__link" href="">
-            <svg class="social-network__icon-instagram" width="16" height="16">
+        <li class="social-network-list__item">
+          <a class="social-network-list__link" href="">
+            <svg class="social-network-list__icon-instagram" width="16" height="16">
               <use xlink:href="./img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="social-network__item">
-          <a class="social-network__link" href="">
-            <svg class="social-network__icon-facebook" width="22" height="22">
+        <li class="social-network-list__item">
+          <a class="social-network-list__link" href="">
+            <svg class="social-network-list__icon-facebook" width="22" height="22">
                 <use xlink:href="./img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
